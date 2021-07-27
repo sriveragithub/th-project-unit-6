@@ -7,7 +7,6 @@ const router = express.Router()
 // Our home route where we can render information about our projects by passing the data in as a locals object
 router.get('/', (req, res) => {
     const allProjects = data.projects
-    console.log(allProjects)
     res.render('index', {
         data: allProjects
     })
